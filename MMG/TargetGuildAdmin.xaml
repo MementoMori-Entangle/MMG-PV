@@ -1,0 +1,20 @@
+﻿<Window x:Class="MMG.TargetGuildAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="対戦ギルド管理" Height="1200" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Label Content="選択ギルド" HorizontalAlignment="Left" Margin="10,16,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabSelectGuildName" Content="選択ギルド" HorizontalAlignment="Left" Margin="70,16,0,0" VerticalAlignment="Top" Width="185"/>
+        <CheckBox x:Name="CheckShowLine" Content="ライン表示" HorizontalAlignment="Left" Margin="348,41,0,0" VerticalAlignment="Top" Click="CheckShowLine_Click"/>
+        <CheckBox x:Name="CheckMinSTDown" Content="スタミナ順表示(リアルタイム)" HorizontalAlignment="Left" Margin="348,22,0,0" VerticalAlignment="Top" Click="CheckMinSTDown_Click"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="16,61,43,18">
+            <Grid x:Name="GridMemberArea1" Background="#FFFEE5F0" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" Width="950"/>
+        </ScrollViewer>
+        <Label Content="総スタミナ" HorizontalAlignment="Left" Margin="116,35,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabMemberOnlineST" Content="0 / 0" HorizontalAlignment="Left" Margin="191,35,0,0" VerticalAlignment="Top" Width="84"/>
+    </Grid>
+</Window>

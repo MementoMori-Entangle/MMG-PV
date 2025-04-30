@@ -1,0 +1,31 @@
+﻿<Window x:Class="MMG.GuildVSDetailSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="ギルドバトル詳細設定" Height="450" Width="900" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Closed="Window_Closed">
+    <Grid>
+        <Label Content="選択ギルド : " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabSelectGuildName" Content="選択ギルド" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="DgGuildMemberInfo" Margin="10,60,220,10" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="メンバー名" Binding="{Binding Name}" IsReadOnly="True"/>
+                <DataGridComboBoxColumn Header="グループ" x:Name="GuildBattleGroup" SelectedValuePath="Id"
+                    DisplayMemberPath="Name" SelectedValueBinding="{Binding GBGroupId}"/>
+                <DataGridTextColumn Header="編成数" Binding="{Binding FormationNum}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="キャラ数" Binding="{Binding CharacterNum}" IsReadOnly="True"/>
+                <DataGridComboBoxColumn Header="仮想編成使用" x:Name="VFCB" SelectedValuePath="Id"
+                    DisplayMemberPath="Name" SelectedValueBinding="{Binding VirtualityFormation}"/>
+                <DataGridTextColumn Header="自動編成最大キャラ数" Binding="{Binding VFCNum}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="BtnSetting" Content="設定" HorizontalAlignment="Left" Margin="143,35,0,0" VerticalAlignment="Top" Click="BtnSetting_Click"/>
+        <Button x:Name="BtnVFAllClear" Content="仮想編成選択全クリア" HorizontalAlignment="Left" Margin="368,35,0,0" VerticalAlignment="Top" Click="BtnVFAllClear_Click"/>
+        <Button x:Name="BtnGBGAllClear" Content="グループ選択全クリア" HorizontalAlignment="Left" Margin="248,35,0,0" VerticalAlignment="Top" Click="BtnGBGAllClear_Click"/>
+        <Label Content="グループフィルタリング" HorizontalAlignment="Left" Margin="698,32,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ListBGroupFilter" Margin="698,65,45,0" Height="315" VerticalAlignment="Top" SelectionMode="Multiple"/>
+    </Grid>
+</Window>

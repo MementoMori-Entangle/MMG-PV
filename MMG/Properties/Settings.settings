@@ -1,0 +1,105 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MMG.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FormationCharaImagePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">char_icon/</Value>
+    </Setting>
+    <Setting Name="FormationTokeNekoImagePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tokeneko_icon/</Value>
+    </Setting>
+    <Setting Name="FormationImageExtension" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.jpg</Value>
+    </Setting>
+    <Setting Name="FormationImageNothing" Type="System.String" Scope="User">
+      <Value Profile="(Default)">未指定</Value>
+    </Setting>
+    <Setting Name="PLAYER_FILE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">player.csv</Value>
+    </Setting>
+    <Setting Name="FORMATION_FILE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">formation.csv</Value>
+    </Setting>
+    <Setting Name="CHARACTER_FILE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">character.csv</Value>
+    </Setting>
+    <Setting Name="GUILD_FILE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">guild.csv</Value>
+    </Setting>
+    <Setting Name="PLAYERVSPLAYER_FILE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">playerVSplayer.csv</Value>
+    </Setting>
+    <Setting Name="FORMATIONVSFORMATION_FILE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">formationVSFormation.csv</Value>
+    </Setting>
+    <Setting Name="SERVER_TIME_CORRECTION_SECONDS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="DEFENSE_TIME" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.8</Value>
+    </Setting>
+    <Setting Name="SELECT_GUILD_ALL_STR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">全ギルド選択</Value>
+    </Setting>
+    <Setting Name="BASE_DATA_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">data/</Value>
+    </Setting>
+    <Setting Name="DISCORD_SERVER_ADMIN_CLIENT_ID" Type="System.UInt64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DISCORD_BOT_CLIENT_ID" Type="System.UInt64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DISCORD_WEEK_PASS_CHANNEL_ID" Type="System.UInt64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DISCORD_MMGP_CHANNEL_ID" Type="System.UInt64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DISCORD_WEEK_PASS_CHANNEL_CLIENT_IDS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BOT_TOKEN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DISCORD_FILE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">discord.csv</Value>
+    </Setting>
+    <Setting Name="GuildImagePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">guild_img/</Value>
+    </Setting>
+    <Setting Name="BACKUP_DIR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bak/</Value>
+    </Setting>
+    <Setting Name="PROCESS_TITLE_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MementoMori</Value>
+    </Setting>
+    <Setting Name="MATCH_TEMP_DIR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mTemp/</Value>
+    </Setting>
+    <Setting Name="MATCH_CHARACTER_DIR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">char_pm/</Value>
+    </Setting>
+    <Setting Name="MATCH_THRESHOLD" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.8</Value>
+    </Setting>
+    <Setting Name="MATCH_GUILDVS_CHARACTER_DIR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">char_pm_gvs/</Value>
+    </Setting>
+    <Setting Name="MATCH_GUILDVS_PLAYER_DIR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">player_pm_gvs/</Value>
+    </Setting>
+    <Setting Name="MATCH_TEMP_DIR_MAX_SIZE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MATCH_AUTO_INTERVAL_TIMES" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3,5,1,0.8,0.4</Value>
+    </Setting>
+    <Setting Name="MATCH_TEMP_DIV_DIR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">div/</Value>
+    </Setting>
+    <Setting Name="MATCH_WINDOW_TITLE_NAMES" Type="System.String" Scope="User">
+      <Value Profile="(Default)">メメントモリサブ垢003,メメントモリサブ垢002兼用</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="MMG.GuildStatistics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="ギルド統計" Height="450" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Label Content="ギルド" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ListGuild" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="14,40,855,10" SelectionMode="Extended"/>
+        <Button x:Name="BtnStatisticsView" Content="統計表示" HorizontalAlignment="Left" Margin="62,16,0,0" VerticalAlignment="Top" Click="BtnStatisticsView_Click"/>
+        <DataGrid x:Name="DgStatistics" Margin="159,40,10,10" AutoGenerateColumns="False"
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                  DataContext="{Binding}" ItemsSource="{Binding}" IsReadOnly="True"/>
+    </Grid>
+</Window>

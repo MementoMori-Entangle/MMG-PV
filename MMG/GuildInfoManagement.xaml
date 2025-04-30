@@ -1,0 +1,38 @@
+﻿<Window x:Class="MMG.GuildInfoManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="ギルド情報管理" Height="450" Width="800" WindowStartupLocation="CenterScreen" Closing="Window_Closing" ResizeMode="CanMinimize">
+    <Grid Margin="0,-1,0,1" RenderTransformOrigin="0.499,0.466">
+        <DataGrid x:Name="DgGuildInfo" Margin="10,62,10,217" AutoGenerateColumns="False" SelectedCellsChanged="DgGuildInfo_SelectedCellsChanged" IsReadOnly="True" MouseDoubleClick="DgGuildInfo_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="ワールド" Binding="{Binding World}"/>
+                <DataGridTextColumn Header="No" Binding="{Binding No}"/>
+                <DataGridTextColumn Header="ギルド名" Binding="{Binding Name}" MinWidth="150"/>
+                <DataGridTextColumn Header="人数" Binding="{Binding MemberNum}"/>
+                <DataGridTextColumn Header="戦力" Binding="{Binding ForceValue}" MinWidth="100"/>
+                <DataGridTextColumn Header="備考" Binding="{Binding Remarks}" MinWidth="400"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="DgGuildMemberInfo" Margin="10,227,10,10" AutoGenerateColumns="False" SelectedCellsChanged="DgGuildMemberInfo_SelectedCellsChanged" Grid.ColumnSpan="2" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="メンバー名" Binding="{Binding Name}" MinWidth="100"/>
+                <DataGridTextColumn Header="スタミナ数" Binding="{Binding Stamina}"/>
+                <DataGridTextColumn Header="戦力" Binding="{Binding ForceValue}" MinWidth="100"/>
+                <DataGridTextColumn Header="主力編成" Binding="{Binding MainFormation}" MinWidth="470"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="BtnNew" Content="新規登録" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Click="BtnNew_Click"/>
+        <Label Content="名前" HorizontalAlignment="Left" Margin="145,14,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextName" HorizontalAlignment="Left" Margin="183,18,0,0" TextWrapping="Wrap" Text="名前" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ワールド" HorizontalAlignment="Left" Margin="318,14,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CombBWorld" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top" Width="63"/>
+        <Button x:Name="BtnSearch" Content="検索" HorizontalAlignment="Left" Margin="473,37,0,0" VerticalAlignment="Top" Click="BtnSearch_Click"/>
+        <Button x:Name="BtnInputClear" Content="クリア" HorizontalAlignment="Left" Margin="516,37,0,0" VerticalAlignment="Top" Click="BtnInputClear_Click"/>
+    </Grid>
+</Window>

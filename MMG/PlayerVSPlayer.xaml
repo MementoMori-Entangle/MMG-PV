@@ -1,0 +1,176 @@
+﻿<Window x:Class="MMG.PlayerVSPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="プレイヤー vs プレイヤー" Height="480" Width="920" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Button x:Name="BtnPlayerLeft" Content="プレイヤー選択" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Click="BtnPlayerLeft_Click"/>
+        <Button x:Name="BtnPlayerRight" Content="プレイヤー選択" HorizontalAlignment="Left" Margin="487,10,0,0" VerticalAlignment="Top" Click="BtnPlayerRight_Click"/>
+        <Label Content="先鋒" HorizontalAlignment="Left" Margin="32,86,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="次鋒" HorizontalAlignment="Left" Margin="32,154,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="中堅" HorizontalAlignment="Left" Margin="29,223,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="副将" HorizontalAlignment="Left" Margin="32,289,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="大将" HorizontalAlignment="Left" Margin="32,358,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Image x:Name="Img1_L" HorizontalAlignment="Left" Height="50" Margin="76,108,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img1_L_MouseLeftButtonUp"/>
+        <Image x:Name="Img2_L" HorizontalAlignment="Left" Height="50" Margin="76,176,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img2_L_MouseLeftButtonUp"/>
+        <Image x:Name="Img3_L" HorizontalAlignment="Left" Height="50" Margin="76,244,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img3_L_MouseLeftButtonUp"/>
+        <Image x:Name="Img4_L" HorizontalAlignment="Left" Height="50" Margin="76,312,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img4_L_MouseLeftButtonUp"/>
+        <Image x:Name="Img5_L" HorizontalAlignment="Left" Height="50" Margin="76,380,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img5_L_MouseLeftButtonUp"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="135,105,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="135,134,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="TextSpeedRune1_1_L" HorizontalAlignment="Left" Margin="225,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune1_1_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune1_2_L" HorizontalAlignment="Left" Margin="256,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune1_2_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune1_3_L" HorizontalAlignment="Left" Margin="287,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune1_3_L_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune1_1_L" HorizontalAlignment="Left" Margin="225,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune1_2_L" HorizontalAlignment="Left" Margin="256,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune1_3_L" HorizontalAlignment="Left" Margin="287,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="135,176,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="135,244,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="135,309,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="135,378,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="135,203,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="135,270,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="135,337,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="135,404,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="TextSpeedRune2_1_L" HorizontalAlignment="Left" Margin="225,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune2_1_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune2_2_L" HorizontalAlignment="Left" Margin="256,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune2_2_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune2_3_L" HorizontalAlignment="Left" Margin="287,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune2_3_L_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune2_1_L" HorizontalAlignment="Left" Margin="225,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune2_2_L" HorizontalAlignment="Left" Margin="256,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune2_3_L" HorizontalAlignment="Left" Margin="287,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextSpeedRune3_1_L" HorizontalAlignment="Left" Margin="225,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune3_1_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune3_2_L" HorizontalAlignment="Left" Margin="256,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune3_2_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune3_3_L" HorizontalAlignment="Left" Margin="287,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune3_3_L_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune3_1_L" HorizontalAlignment="Left" Margin="225,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune3_2_L" HorizontalAlignment="Left" Margin="256,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune3_3_L" HorizontalAlignment="Left" Margin="287,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextSpeedRune4_1_L" HorizontalAlignment="Left" Margin="225,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune4_1_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune4_2_L" HorizontalAlignment="Left" Margin="256,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune4_2_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune4_3_L" HorizontalAlignment="Left" Margin="287,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune4_3_L_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune4_1_L" HorizontalAlignment="Left" Margin="225,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune4_2_L" HorizontalAlignment="Left" Margin="256,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune4_3_L" HorizontalAlignment="Left" Margin="287,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.494,0.769" Height="18"/>
+        <TextBox x:Name="TextSpeedRune5_1_L" HorizontalAlignment="Left" Margin="225,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune5_1_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune5_2_L" HorizontalAlignment="Left" Margin="256,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune5_2_L_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune5_3_L" HorizontalAlignment="Left" Margin="287,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune5_3_L_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune5_1_L" HorizontalAlignment="Left" Margin="225,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune5_2_L" HorizontalAlignment="Left" Margin="256,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune5_3_L" HorizontalAlignment="Left" Margin="287,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.494,0.769" Height="18"/>
+        <Label x:Name="LabRarity1_L" Content="先鋒R" HorizontalAlignment="Left" Margin="82,86,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity2_L" Content="次鋒R" HorizontalAlignment="Left" Margin="82,154,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity3_L" Content="中堅R" HorizontalAlignment="Left" Margin="82,222,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity4_L" Content="副将R" HorizontalAlignment="Left" Margin="82,289,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity5_L" Content="大将R" HorizontalAlignment="Left" Margin="82,358,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label Content="先鋒" HorizontalAlignment="Left" Margin="493,86,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="次鋒" HorizontalAlignment="Left" Margin="493,154,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="中堅" HorizontalAlignment="Left" Margin="489,222,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="副将" HorizontalAlignment="Left" Margin="493,289,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="大将" HorizontalAlignment="Left" Margin="493,358,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Image x:Name="Img1_R" HorizontalAlignment="Left" Height="50" Margin="537,108,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img1_R_MouseLeftButtonUp"/>
+        <Image x:Name="Img2_R" HorizontalAlignment="Left" Height="50" Margin="537,176,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img2_R_MouseLeftButtonUp"/>
+        <Image x:Name="Img3_R" HorizontalAlignment="Left" Height="50" Margin="537,244,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img3_R_MouseLeftButtonUp"/>
+        <Image x:Name="Img4_R" HorizontalAlignment="Left" Height="50" Margin="537,312,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img4_R_MouseLeftButtonUp"/>
+        <Image x:Name="Img5_R" HorizontalAlignment="Left" Height="50" Margin="537,380,0,0" VerticalAlignment="Top" Width="50" Source="/char_icon/不明.jpg" MouseLeftButtonUp="Img5_R_MouseLeftButtonUp"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="596,105,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="596,134,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="TextSpeedRune1_1_R" HorizontalAlignment="Left" Margin="686,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune1_1_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune1_2_R" HorizontalAlignment="Left" Margin="717,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune1_2_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune1_3_R" HorizontalAlignment="Left" Margin="748,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune1_3_R_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune1_1_R" HorizontalAlignment="Left" Margin="686,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune1_2_R" HorizontalAlignment="Left" Margin="717,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune1_3_R" HorizontalAlignment="Left" Margin="748,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="596,176,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="596,244,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="596,309,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="スピードルーン" HorizontalAlignment="Left" Margin="596,378,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="596,203,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="596,270,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="596,337,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="物魔貫通ルーン" HorizontalAlignment="Left" Margin="596,404,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="TextSpeedRune2_1_R" HorizontalAlignment="Left" Margin="686,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune2_1_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune2_2_R" HorizontalAlignment="Left" Margin="717,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune2_2_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune2_3_R" HorizontalAlignment="Left" Margin="748,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune2_3_R_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune2_1_R" HorizontalAlignment="Left" Margin="686,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune2_2_R" HorizontalAlignment="Left" Margin="717,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune2_3_R" HorizontalAlignment="Left" Margin="748,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextSpeedRune3_1_R" HorizontalAlignment="Left" Margin="686,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune3_1_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune3_2_R" HorizontalAlignment="Left" Margin="717,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune3_2_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune3_3_R" HorizontalAlignment="Left" Margin="748,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune3_3_R_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune3_1_R" HorizontalAlignment="Left" Margin="686,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune3_2_R" HorizontalAlignment="Left" Margin="717,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune3_3_R" HorizontalAlignment="Left" Margin="748,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextSpeedRune4_1_R" HorizontalAlignment="Left" Margin="686,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune4_1_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune4_2_R" HorizontalAlignment="Left" Margin="717,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune4_2_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune4_3_R" HorizontalAlignment="Left" Margin="748,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune4_3_R_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune4_1_R" HorizontalAlignment="Left" Margin="686,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune4_2_R" HorizontalAlignment="Left" Margin="717,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune4_3_R" HorizontalAlignment="Left" Margin="748,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.494,0.769" Height="18"/>
+        <TextBox x:Name="TextSpeedRune5_1_R" HorizontalAlignment="Left" Margin="686,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune5_1_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune5_2_R" HorizontalAlignment="Left" Margin="717,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.465,2.955" Height="18" TextChanged="TextSpeedRune5_2_R_TextChanged"/>
+        <TextBox x:Name="TextSpeedRune5_3_R" HorizontalAlignment="Left" Margin="748,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18" TextChanged="TextSpeedRune5_3_R_TextChanged"/>
+        <TextBox x:Name="TextPiercingRune5_1_R" HorizontalAlignment="Left" Margin="686,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.545,0.981" Height="18"/>
+        <TextBox x:Name="TextPiercingRune5_2_R" HorizontalAlignment="Left" Margin="717,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <TextBox x:Name="TextPiercingRune5_3_R" HorizontalAlignment="Left" Margin="748,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" RenderTransformOrigin="0.494,0.769" Height="18"/>
+        <Label x:Name="LabRarity1_R" Content="先鋒R" HorizontalAlignment="Left" Margin="543,86,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity2_R" Content="次鋒R" HorizontalAlignment="Left" Margin="543,154,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity3_R" Content="中堅R" HorizontalAlignment="Left" Margin="543,222,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity4_R" Content="副将R" HorizontalAlignment="Left" Margin="543,289,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="LabRarity5_R" Content="大将R" HorizontalAlignment="Left" Margin="543,358,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <Label x:Name="LabFormationId_L" Content="ID" HorizontalAlignment="Left" Margin="33,67,0,0" VerticalAlignment="Top" Height="26" Width="82" MouseDoubleClick="LabFormationId_L_MouseDoubleClick" ToolTip="左ダブルクリックで編成IDコピー"/>
+        <Label Content="名前" HorizontalAlignment="Left" Margin="110,67,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="TextFormationName_L" HorizontalAlignment="Left" Margin="145,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Label Content="順序" HorizontalAlignment="Left" Margin="267,66,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="TextFormationSort_L" HorizontalAlignment="Left" Margin="302,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <Button x:Name="BtnNext_L" Content="次の編成" HorizontalAlignment="Left" Margin="390,70,0,0" VerticalAlignment="Top" IsEnabled="False" Height="20" Width="50" Click="BtnNext_L_Click"/>
+        <Button x:Name="BtnBack_L" Content="前の編成" HorizontalAlignment="Left" Margin="334,70,0,0" VerticalAlignment="Top" IsEnabled="False" Height="20" Width="50" Click="BtnBack_L_Click"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="470,67,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <Label x:Name="LabFormationId_R" Content="ID" HorizontalAlignment="Left" Margin="492,67,0,0" VerticalAlignment="Top" Height="26" Width="82" MouseDoubleClick="LabFormationId_R_MouseDoubleClick" ToolTip="左ダブルクリックで編成IDコピー"/>
+        <Label Content="名前" HorizontalAlignment="Left" Margin="574,66,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="TextFormationName_R" HorizontalAlignment="Left" Margin="608,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Label Content="順序" HorizontalAlignment="Left" Margin="729,66,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="TextFormationSort_R" HorizontalAlignment="Left" Margin="763,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" TextAlignment="Right" Height="18"/>
+        <Button x:Name="BtnNext_R" Content="次の編成" HorizontalAlignment="Left" Margin="851,69,0,0" VerticalAlignment="Top" IsEnabled="False" Height="20" Width="50" Click="BtnNext_R_Click"/>
+        <Button x:Name="BtnBack_R" Content="前の編成" HorizontalAlignment="Left" Margin="795,69,0,0" VerticalAlignment="Top" IsEnabled="False" Height="20" Width="50" Click="BtnBack_R_Click"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="112,12,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <Label x:Name="LabMemberId_L" Content="" HorizontalAlignment="Left" Margin="133,12,0,0" VerticalAlignment="Top" Width="98" Height="26" RenderTransformOrigin="2.697,-1.66"/>
+        <Label Content="名前" HorizontalAlignment="Left" Margin="234,12,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="TextMemberName_L" HorizontalAlignment="Left" Margin="273,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" AutoWordSelection="True" Height="18"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="579,12,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <Label x:Name="LabMemberId_R" Content="" HorizontalAlignment="Left" Margin="600,12,0,0" VerticalAlignment="Top" Width="100" Height="26" RenderTransformOrigin="2.697,-1.66"/>
+        <Label Content="名前" HorizontalAlignment="Left" Margin="707,12,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="TextMemberName_R" HorizontalAlignment="Left" Margin="746,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" AutoWordSelection="True" Height="18"/>
+        <Button x:Name="BtnVS" Margin="376,191,479,215" ToolTip="クリックで戦闘" Background="{x:Null}" Click="BtnVS_Click" RenderTransformOrigin="0.5,0.5" MouseEnter="BtnVS_MouseEnter" MouseLeave="BtnVS_MouseLeave">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.15"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="ImgVS" Height="41" Width="44" Source="/tokeneko_icon/11.jpg"/>
+        </Button>
+        <Image x:Name="ImgVSLeft" HorizontalAlignment="Left" Height="41" Margin="321,254,0,0" VerticalAlignment="Top" Width="44" Source="/tokeneko_icon/6.jpg" ToolTip=""/>
+        <Image x:Name="ImgVSRight" HorizontalAlignment="Left" Height="41" Margin="448,254,0,0" VerticalAlignment="Top" Width="44" Source="/tokeneko_icon/6.jpg" ToolTip=""/>
+        <Label x:Name="LabLevel1_L" Content="先鋒L" HorizontalAlignment="Left" Margin="130,86,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel2_L" Content="次鋒L" HorizontalAlignment="Left" Margin="131,154,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel3_L" Content="中堅L" HorizontalAlignment="Left" Margin="131,222,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel4_L" Content="副将L" HorizontalAlignment="Left" Margin="133,289,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel5_L" Content="大将L" HorizontalAlignment="Left" Margin="133,358,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel1_R" Content="先鋒L" HorizontalAlignment="Left" Margin="593,86,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel2_R" Content="次鋒L" HorizontalAlignment="Left" Margin="593,154,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel3_R" Content="中堅L" HorizontalAlignment="Left" Margin="594,222,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel4_R" Content="副将L" HorizontalAlignment="Left" Margin="594,289,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="LabLevel5_R" Content="大将L" HorizontalAlignment="Left" Margin="594,358,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label Content="KO数→" HorizontalAlignment="Left" Margin="417,117,0,0" VerticalAlignment="Top" Height="26" Width="63"/>
+        <TextBox x:Name="TextDefenseKONum" HorizontalAlignment="Left" Margin="388,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" TextAlignment="Right" Height="18" RenderTransformOrigin="-0.643,0.502"/>
+        <Label Content="自動挑戦回数" HorizontalAlignment="Left" Margin="332,149,0,0" VerticalAlignment="Top" Height="26" Width="81"/>
+        <TextBox x:Name="TextAutoVSCnt" HorizontalAlignment="Left" Margin="414,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" TextAlignment="Right" Height="18" RenderTransformOrigin="-0.643,0.502" MaxLength="3"/>
+        <ListView x:Name="ListVSResult" Margin="329,301,432,22" VerticalContentAlignment="Top"/>
+        <Button x:Name="BtnFVSFSet" Content="対戦判定データ反映" HorizontalAlignment="Left" Margin="417,42,0,0" VerticalAlignment="Top" Click="BtnFVSFSet_Click"/>
+    </Grid>
+</Window>

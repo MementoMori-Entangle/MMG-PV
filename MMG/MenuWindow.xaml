@@ -1,0 +1,29 @@
+﻿<Window x:Class="MMG.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="メニュー" Height="450" Width="800" WindowStartupLocation="CenterScreen" Closed="Window_Closed" ResizeMode="CanMinimize">
+    <Grid>
+        <Button x:Name="BtnGuildInfoManagement" Content="ギルド情報管理" HorizontalAlignment="Left" Margin="25,28,0,0" VerticalAlignment="Top" Height="30" Width="107" FontSize="14" Click="BtnGuildInfoManagement_Click"/>
+        <Calendar HorizontalAlignment="Left" Margin="589,15,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="TextTimeBlock" Margin="589,188,32,185" Text="デジタル時計" TextAlignment="Center" FontSize="28" ForceCursor="True"/>
+        <Button x:Name="BtnPlayerVSPlayer" Content="プレイヤー vs プレイヤー" HorizontalAlignment="Left" Margin="25,174,0,0" VerticalAlignment="Top" Height="30" Width="141" FontSize="14" Click="BtnPlayerVSPlayer_Click"/>
+        <Button x:Name="BtnGuildVSGuild" Content="ギルド vs ギルド" HorizontalAlignment="Left" Margin="188,174,0,0" VerticalAlignment="Top" Height="30" Width="104" FontSize="14" Click="BtnGuildVSGuild_Click"/>
+        <Canvas x:Name="CanvasNeko" Margin="492,249,10,10">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/meun_bg.jpg"/>
+            </Canvas.Background>
+        </Canvas>
+        <Button x:Name="BtnGuildVSAdmin" Content="ギルドバトル進捗管理" HorizontalAlignment="Left" Margin="53,78,0,0" VerticalAlignment="Top" Height="30" Width="138" FontSize="14" Click="BtnGuildVSAdmin_Click"/>
+        <Button x:Name="BtnCharacterSpeed" Content="キャラスピード調整" HorizontalAlignment="Left" Margin="25,263,0,0" VerticalAlignment="Top" Height="30" Width="141" FontSize="14" Click="BtnCharacterSpeed_Click"/>
+        <Button x:Name="BtnGuildVSMap" Content="ギルドバトルマップ" HorizontalAlignment="Left" Margin="220,78,0,0" VerticalAlignment="Top" Height="30" Width="107" FontSize="14" Click="BtnGuildVSMap_Click"/>
+        <Button x:Name="BtnPlayerManagement" Content="プレイヤー情報管理" HorizontalAlignment="Left" Margin="143,28,0,0" VerticalAlignment="Top" Height="30" Width="131" FontSize="14" Click="BtnPlayerManagement_Click" RenderTransformOrigin="0.668,7.241"/>
+        <Button x:Name="BtnCharacterImageRead" Content="キャラ画像読込" HorizontalAlignment="Left" Margin="188,263,0,0" VerticalAlignment="Top" Height="30" Width="104" FontSize="14" Click="BtnCharacterImageRead_Click"/>
+        <Button x:Name="BtnGuildVSFormation" Content="ギルドバトル自動対応編成" HorizontalAlignment="Left" Margin="87,127,0,0" VerticalAlignment="Top" Height="30" Width="162" FontSize="14" Click="BtnGuildVSFormation_Click"/>
+        <TextBlock x:Name="TextBPMTempFileInfo" HorizontalAlignment="Left" Margin="25,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="342"/>
+        <Button x:Name="BtnVSDataManagement" Content="対戦判定データ管理" HorizontalAlignment="Left" Margin="27,217,0,0" VerticalAlignment="Top" Height="30" Width="139" FontSize="14" Click="BtnVSDataManagement_Click"/>
+    </Grid>
+</Window>

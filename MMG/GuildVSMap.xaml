@@ -1,0 +1,16 @@
+﻿<Window x:Class="MMG.GuildVSMap"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="ギルドバトルマップ" Height="1140" Width="1240" WindowStartupLocation="CenterScreen" MouseLeftButtonUp="Window_MouseLeftButtonUp" MouseRightButtonUp="Window_MouseRightButtonUp" ResizeMode="CanMinimize">
+    <Grid>
+        <Canvas x:Name="CanvasGuildMap">
+            <Canvas.Background>
+                <ImageBrush />
+            </Canvas.Background>
+        </Canvas>
+    </Grid>
+</Window>

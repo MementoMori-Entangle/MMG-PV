@@ -1,0 +1,24 @@
+﻿<Window x:Class="MMG.GuildInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="ギルド情報" Height="240" Width="320" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <Label x:Name="LabId" Content="ID" HorizontalAlignment="Left" Margin="41,10,0,0" VerticalAlignment="Top" Height="26" Width="95"/>
+        <Label Content="名前" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="TextName" HorizontalAlignment="Left" Margin="71,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" AutoWordSelection="True" Height="18"/>
+        <Label Content="順序" HorizontalAlignment="Left" Margin="121,64,0,0" VerticalAlignment="Top" Height="26" Width="40"/>
+        <TextBox x:Name="TextNo" HorizontalAlignment="Left" Margin="161,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" AutoWordSelection="True" TextAlignment="Right" Height="18"/>
+        <Label Content="ワールド" HorizontalAlignment="Left" Margin="11,64,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <TextBox x:Name="TextWorld" HorizontalAlignment="Left" Margin="72,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" AutoWordSelection="True" TextAlignment="Right" Height="18"/>
+        <Label Content="メモ" HorizontalAlignment="Left" Margin="11,100,0,0" VerticalAlignment="Top" Height="26" Width="79"/>
+        <TextBox x:Name="TextRemarks" HorizontalAlignment="Left" Margin="17,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" AutoWordSelection="True" Height="59"/>
+        <Button x:Name="BtnUpdate" Content="更新" HorizontalAlignment="Left" Margin="220,126,0,0" VerticalAlignment="Top" Click="BtnUpdate_Click" Height="20" Width="59" AllowDrop="True"/>
+        <Button x:Name="BtnDelete" Content="削除" HorizontalAlignment="Left" Margin="220,152,0,0" VerticalAlignment="Top" Click="BtnDelete_Click" Height="20" Width="59" AllowDrop="True"/>
+        <CheckBox x:Name="CheckBackup" Content="バックアップ" HorizontalAlignment="Left" Margin="210,106,0,0" VerticalAlignment="Top" IsChecked="True"/>
+    </Grid>
+</Window>

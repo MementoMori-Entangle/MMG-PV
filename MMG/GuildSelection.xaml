@@ -1,0 +1,16 @@
+﻿<Window x:Class="MMG.GuildSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMG"
+        mc:Ignorable="d"
+        Title="ギルド選択" Height="200" Width="280" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <ComboBox x:Name="CombGuild" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="143" SelectionChanged="CombGuild_SelectionChanged"/>
+        <Label Content="ギルド選択" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnSet" Content="設定" HorizontalAlignment="Center" Margin="0,13,0,0" VerticalAlignment="Top" Click="BtnSet_Click"/>
+        <Label Content="画面サイズ" HorizontalAlignment="Left" Margin="163,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CombGuildMapScale" HorizontalAlignment="Left" Margin="167,38,0,0" VerticalAlignment="Top" Width="92" Height="22" SelectionChanged="CombGuildMapScale_SelectionChanged"/>
+    </Grid>
+</Window>
